@@ -1,6 +1,6 @@
 name: "Newman Tests"
 on: [push, pull_request]
-
+jobs:
   build:
     runs-on: ubuntu-latest
     container:
@@ -10,4 +10,4 @@ on: [push, pull_request]
       uses: actions/checkout@v2
 
     - name: Run API Tests
-      run: newman run "RestfulBookerBVT.postman_collection.json" -e Production.postman_environment.json
+      run: newman run "Restful Booker BVT.postman_collection.json" -e Production.postman_environment.json
